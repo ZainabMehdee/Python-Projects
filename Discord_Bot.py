@@ -9,13 +9,29 @@ async def on_ready():
 
 
 @client.event
-async def on_message(message_trigger):
-    if message_trigger.author == client.user:
+async def on_message(message):
+    if message.author == client.user:
         return  
-    if message_trigger.content.startswith("hi"):
-        await message_trigger.channel.send("Hello")
+    if message.content.startswith("hi"):
+        await message.channel.send("Hello")
+    
+    if message.author.id == 446675888927408139:
+       await message.reply("Hagu")
+    
+    if message.content.startswith("Wait"):
+        await message.channel.send("Hello, What's up. Die")
+    
+    if message.content.startswith("Hi"):
+        await message.channel.send("Wh")
+    
+    if message.content.startswith("h"):
+        await message.channel.send("Hello, What's up. Die")
+    
+    if message.content.startswith("hi"):
+        await message.channel.send("Hello, What's up. Die")
 
-client.run(os.getenv("TOKEN"))
+
+client.run("ODAyOTI1ODExODQxNDk5MTQ2.YA2U7w.EMKG4cW1VE91UuH5tXPg9ts30jY")
 
 
 

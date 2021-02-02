@@ -1,6 +1,9 @@
-#Create a function called how_much_longer() which when called, prints the number of seconds
-#left to go until the weekend (Friday 5PM). If it is currently the weekend, it should print how much
-#longer they have left before monday 7am.
+""" 
+Create a function called how_much_longer() which when called, prints the number of seconds
+left to go until the weekend (Friday 5PM). If it is currently the weekend, it should print how much
+longer they have left before monday 7am. 
+
+"""
 
 from datetime import datetime
 from datetime import timedelta

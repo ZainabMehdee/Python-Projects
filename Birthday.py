@@ -39,4 +39,6 @@ if current_date_time.month == birth_date_time.month:
     if current_date_time.day < birth_date_time.day:
         current_age -= 1
 
-print(day_of_the_week_born, days_before_next_birthday, current_age)
+print("You were born on: ", day_of_the_week_born )
+print("Days before your next birthday: ", days_before_next_birthday)
+print("Your current age is: ", current_age)
